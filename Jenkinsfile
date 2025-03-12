@@ -7,7 +7,7 @@ pipeline {
                 echo 'Hello World'
             }
         }
-         stage('Hello') {
+         stage('Hello2') {
             steps {
                 bat 'node index.js'
         }
