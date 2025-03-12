@@ -1,1 +1,1 @@
-echo "harsh"
+console.log("harsh")
