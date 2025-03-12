@@ -2,20 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Hello') {
             steps {
-                echo 'building'
-            }
-        } 
-        stage('Test') {
-            steps {
-                echo 'testing'
-            }
-        }  
-        stage('Deploy') {
-            steps {
-                echo 'deploying'
+                echo 'Hello World'
             }
         }
+         stage('Hello') {
+            steps {
+                bat 'node index.js'
+        }
     }
+}
 }
